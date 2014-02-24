@@ -1,0 +1,98 @@
+#footer
+  position: relative
+  z-index: 1000
+
+  .position-container
+    background-color: footer-gray
+    color: sky-blue
+    width: 100%
+    padding: 2em 0
+    border-top: 1px solid border-gray
+    absolute: top -115px
+
+    a, span
+      color: sky-blue
+      text-decoration: none
+      bold()
+
+    .btn-container
+      col(2/5, offset: 1/13)
+      margin-right: 0
+      text-align: center
+
+      @media only screen and (max-width: 1050px)
+        span(45/100)
+        margin: 0 2%
+        text-align: center
+
+      @media main-bp
+        center(65%)
+
+      .round-btn
+        border: 2px solid sky-blue
+        border-radius: 4px
+        margin: 0.25em
+        padding: 1em 1.5em
+        col(24/50)
+        line-height: 1em
+
+        @media main-bp
+          width: 100%
+
+        &.first
+          margin-right: 2%
+
+        span
+          fs: 1.1em
+
+          @media only screen and (max-width: 950px)
+            fs: 1em
+
+          @media only screen and (max-width: 850px)
+            fs: 0.8em
+
+          @media only screen and (max-width: 720px)
+            fs: 0.6em
+
+          @media main-bp
+            fs: 1em
+
+    .link-container
+      span(35/100)
+      margin-top: 1.4em
+
+      @media only screen and (max-width: 725px)
+        width: 30%
+
+      @media main-bp
+        display: none
+
+      a
+        @media only screen and (max-width: 952px)
+          fs: 0.8em
+
+    .seperator:after
+      content: '|'
+      margin: 0 0.5em
+
+    .mobile-footer-links
+      display: none
+      margin: 2em 0
+
+      @media main-bp
+        display: block
+        center(200px)
+        text-align: center
+
+    // Social and Nav Links
+    .social-icons
+      group()
+      margin-right: 2%
+      float: right
+      padding-top: 0.7em
+
+      @media main-bp
+        center(100px)
+
+      ul
+        inline-list()

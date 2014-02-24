@@ -1,0 +1,52 @@
+#landing
+  background-color: #e2cbff
+  height: 700px
+
+  .content-container
+    padding-top: 4em
+
+    @media main-bp
+      padding-top: 2em
+
+  .logo
+    col(1/4)
+
+    @media main-bp
+      center(120px)
+
+  .landing-copy
+    col(6/10)
+    float: right
+    color: white
+
+    @media only screen and (max-width: 530px)
+      padding-top: 3em
+    
+    @media main-bp
+      center(300px)
+      text-align: center
+      padding-top: 0
+
+    h3
+      font-size: 1.5em
+      color: white
+
+      @media only screen and (max-width: 900px)
+        fs: 1.25em
+
+      @media only screen and (max-width: 750px)
+        fs: .9em
+
+
+      @media main-bp
+        width: 100%
+        font-size: 1.2em
+
+  .btn-container
+    display: block
+
+    @media main-bp
+      display: none
+
+    img
+      width: 30%
