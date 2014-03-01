@@ -1,45 +1,29 @@
 #second-panel
+  .section-header
+    text-align: center
+    color: purple
+    upcase()
+
   ul
     list-style-type: none
 
+    @media main-bp
+      center(180px)
+
     li
-      size: 100px
+      size: 150px
       rounded()
       border: 1px solid black
+      float: left
+      margin: 2em 1em
+      background-color: purple
+      box-shadow: 5px 5px 5px gray
 
       p
-        center(77px)
+        center(130px)
+        upcase()
+        bold()
+        fs: .9em
         relative: top 25px
-
-
-//   background-color: lt-gray
-//   color: sky-blue
-//   position: relative
-//   z-index: 101
-//   box-shadow: 0px -7px 7px -7px gray
-
-//   .content-container
-//     padding-top: 1em
-
-//     .panel-copy
-//       col(3/7, offset: 1/12)
-//       padding-top: 4em
-//       fs: 1.5em
-//       margin-right: 0
-
-//       @media only screen and (max-width: 950px)
-//         fs: 1em
-
-//       @media only screen and (max-width: 700px)
-//         padding-top: 1em
-//         fs: 0.89em
-
-//       @media main-bp
-//         fs: 1.22em
-//         center(90%)
-
-//       h2
-//         margin-bottom: .2em
-
-//       p
-//         margin: 0
+        text-align: center
+        color: white

@@ -1,6 +1,7 @@
 .content-container,
 #landing .logo,
 #landing .landing-copy,
+#second-panel .section-header,
 #second-panel ul li p,
 .image-container,
 .image-container img.phone,
@@ -17,6 +18,7 @@
 .content-container:before,
 #landing .logo:before,
 #landing .landing-copy:before,
+#second-panel .section-header:before,
 #second-panel ul li p:before,
 .image-container:before,
 .image-container img.phone:before,
@@ -31,6 +33,7 @@
 .content-container:after,
 #landing .logo:after,
 #landing .landing-copy:after,
+#second-panel .section-header:after,
 #second-panel ul li p:after,
 .image-container:after,
 .image-container img.phone:after,
@@ -48,6 +51,7 @@
 .content-container:after,
 #landing .logo:after,
 #landing .landing-copy:after,
+#second-panel .section-header:after,
 #second-panel ul li p:after,
 .image-container:after,
 .image-container img.phone:after,
@@ -330,7 +334,6 @@ img {
 }
 #landing {
   background-color: #e2cbff;
-  height: 900px;
 }
 #landing .content-container {
   padding-top: 4em;
@@ -339,6 +342,9 @@ img {
   #landing .content-container {
     padding-top: 2em;
   }
+}
+#landing h1 {
+  color: #8e48c2;
 }
 #landing .logo {
   float: left;
@@ -475,30 +481,60 @@ input#mc-embedded-subscribe.button:active {
 input#mc-embedded-subscribe.button:hover {
   color: #fff;
 }
+#second-panel .section-header {
+  text-align: center;
+  color: #8e48c2;
+  text-transform: uppercase;
+}
 #second-panel ul {
   list-style-type: none;
 }
+@media (max-width: 550px) {
+  #second-panel ul {
+    width: auto;
+    max-width: 180px;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 #second-panel ul li {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   -webkit-border-radius: 999px;
   -moz-border-radius: 999px;
   -o-border-radius: 999px;
   -ms-border-radius: 999px;
   border-radius: 999px;
   border: 1px solid #272727;
+  float: left;
+  margin: 2em 1em;
+  background-color: #8e48c2;
+  -webkit-box-shadow: 5px 5px 5px #808080;
+  -moz-box-shadow: 5px 5px 5px #808080;
+  -o-box-shadow: 5px 5px 5px #808080;
+  -ms-box-shadow: 5px 5px 5px #808080;
+  box-shadow: 5px 5px 5px #808080;
 }
 #second-panel ul li p {
   width: auto;
-  max-width: 77px;
+  max-width: 130px;
   float: none;
   display: block;
   margin-right: auto;
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9em;
   position: relative;
   top: 25px;
+  text-align: center;
+  color: #fff;
 }
 .image-container {
   float: left;
