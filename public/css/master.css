@@ -1,40 +1,44 @@
 .content-container,
 #landing .logo,
 #landing .landing-copy,
+#about-us h2,
 #second-panel .section-header,
 #second-panel ul li p,
 .image-container,
 .image-container img.phone,
-#footer .faqs {
+#footer .footer-links {
   *zoom: 1;
 }
 .content-container:before,
 #landing .logo:before,
 #landing .landing-copy:before,
+#about-us h2:before,
 #second-panel .section-header:before,
 #second-panel ul li p:before,
 .image-container:before,
 .image-container img.phone:before,
-#footer .faqs:before,
+#footer .footer-links:before,
 .content-container:after,
 #landing .logo:after,
 #landing .landing-copy:after,
+#about-us h2:after,
 #second-panel .section-header:after,
 #second-panel ul li p:after,
 .image-container:after,
 .image-container img.phone:after,
-#footer .faqs:after {
+#footer .footer-links:after {
   content: '';
   display: table;
 }
 .content-container:after,
 #landing .logo:after,
 #landing .landing-copy:after,
+#about-us h2:after,
 #second-panel .section-header:after,
 #second-panel ul li p:after,
 .image-container:after,
 .image-container img.phone:after,
-#footer .faqs:after {
+#footer .footer-links:after {
   clear: both;
 }
 article,
@@ -428,6 +432,31 @@ img {
 #faqs dd {
   margin-bottom: 2em;
 }
+#about-us {
+  background-color: #e2cbff;
+  height: 1100px;
+}
+#about-us h2 {
+  color: #550095;
+  font-size: 2em;
+  width: auto;
+  max-width: 300px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+#about-us p {
+  color: #8e48c2;
+  font-size: 1.5em;
+}
+#about-us .motto {
+  font-weight: bold;
+  color: #550095;
+}
 #mc-embedded-subscribe-form {
   background-color: #e2cbff;
 }
@@ -613,21 +642,42 @@ input#mc-embedded-subscribe.button:hover {
   width: 100%;
 }
 #footer {
-  height: 100px;
   background-color: #e2cbff;
-  color: #8e48c2;
 }
-#footer .faqs {
-  text-align: center;
+#footer .footer-links {
   width: auto;
-  max-width: 200px;
+  max-width: 375px;
   float: none;
   display: block;
   margin-right: auto;
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
-  font-size: 2em;
+}
+@media (max-width: 550px) {
+  #footer .footer-links {
+    width: auto;
+    max-width: 152px;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+#footer .footer-links a {
+  color: #8e48c2;
+  float: left;
+  margin: 0 1em;
+}
+@media (max-width: 550px) {
+  #footer .footer-links a {
+    float: none;
+  }
+}
+#footer .footer-links a h2 {
+  text-align: center;
 }
 .section-header {
   color: #8e48c2;

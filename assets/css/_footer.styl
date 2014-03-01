@@ -1,12 +1,22 @@
 #footer
-  height: 100px
   background-color: #e2cbff
-  color: purple
 
-  .faqs
-    text-align: center
-    center(200px)
-    fs: 2em
+  .footer-links
+    center(375px)
+
+    @media main-bp
+      center(152px)
+
+    a
+      color: purple
+      float: left
+      margin: 0 1em
+
+      @media main-bp
+        float: none
+
+      h2
+        text-align: center
   // position: relative
   // z-index: 1000
 
